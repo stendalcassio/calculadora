@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body {
+    background-color: #dedede;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8em;
+}
+
+#calc {
+    width: 400px;
+    background-color: #242830;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 0;
+}
+
+#calc h3 {
+    font-size: .8em;
+    font-weight: 300;
+    color: #666;
+    margin: 10px;
+}
+
+#operations {
+    text-align: right;
+    padding: .5em;
+}
+
+#previous-operation {
+    color: #777;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+}
+
+#current-operation {
+    min-height: 1.6em;
+    font-size: 3em;
+    font-weight: 700;
+    padding: .2em;
+    overflow-wrap: break-word;
+}
+
+#buttons-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+}
+
+.rounded-left {
+    border-bottom-left-radius: 20px;
+}
+
+.rounded-right {
+    border-bottom-right-radius: 20px;
+}
+#buttons-container button:nth-child(4),
+#buttons-container button:nth-child(8),
+#buttons-container button:nth-child(12),
+#buttons-container button:nth-child(16),
+#equal-btn {
+  background-color: #bb4fd2;
+}
+
+#buttons-container button:nth-child(1),
+#buttons-container button:nth-child(2),
+#buttons-container button:nth-child(3) {
+    color: #ac60c3;
+}
+
+#buttons-container button:nth-child(3) {
+    text-align: center;
+}
+
+#buttons-container {
+    font-size: 20px;
+}
+
+#buttons-container button:hover {
+    background-color: #272b35;
+}
+
+#buttons-container button:nth-child(4):hover,
+#buttons-container button:nth-child(8):hover,
+#buttons-container button:nth-child(12):hover,
+#buttons-container button:nth-child(16):hover {
+    background-color: #af46c7;
+    color: #1d2027;
+}
+
+#buttons-container button:nth-child(1):hover,
+#buttons-container button:nth-child(2):hover {
+    background-color: #272b35;
+}
+
+
+#buttons-container button:nth-child(18) {
+    grid-column: span 2;
+}
+
+#buttons-container button {
+    border: none;
+    background-color: #29303e;
+    color: #dedede;
+    height: 4em;
+    font-size: 1.2em;
+    cursor: pointer;
+}
